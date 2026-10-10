@@ -11,6 +11,8 @@
   height: 50px;
   width: 440px;
   color: var(--color-title);
+  background-color: var(--color-ivory);
+  box-shadow: inset 0 0 0 1px rgba(147, 101, 43, 0.16);
   font-weight: bold;
   padding: 0px 15px;
   margin: 8px 0px;
@@ -32,6 +34,7 @@
 }
 
 .form-field__input:focus {
+  box-shadow: inset 0 0 0 2px var(--color-gold-light);
   padding-top: 28px;
   padding-bottom: 12px;
 }

@@ -20,6 +20,8 @@
   bottom: 0;
   padding: 40px;
   background-color: var(--color-dark);
+  background-image: var(--background-premium);
+  box-shadow: inset 0 1px rgba(232, 199, 137, 0.35), 0 16px 40px rgba(36, 28, 24, 0.2);
   color: var(--color-white);
   width: 43%;
 }
@@ -44,6 +46,7 @@
 .hero__category {
   font-size: 12px;
   line-height: 16px;
+  color: var(--color-gold-light);
 }
 
 @media screen and (max-width: 1347px) {
@@ -132,6 +135,7 @@
   bottom: 14em;
   z-index: 12;
   background: var(--color-accent);
+  background-image: var(--background-gold);
   width: 266px;
   height: 50px;
   display: flex;
@@ -148,7 +152,7 @@
 }
 
 .hero__start p {
-  color: var(--color-white);
+  color: var(--color-on-accent);
   font-size: 12px;
   line-height: 25px;
   font-weight: 600;

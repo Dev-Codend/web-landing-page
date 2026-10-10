@@ -1,6 +1,14 @@
 :root {
-  --color-accent: #EC4851;
-  --color-dark: #171A21;
+  --color-accent: #D6A13C;
+  --color-dark: #171717;
+  --color-gold-light: #F1D59C;
+  --color-ivory: #FFF5DF;
+  --color-on-accent: #171717;
+  --background-premium:
+    radial-gradient(ellipse at 12% 0%, rgba(241, 213, 156, 0.12), transparent 55%),
+    radial-gradient(ellipse at 100% 100%, rgba(214, 161, 60, 0.1), transparent 65%),
+    linear-gradient(135deg, #414141 0%, #252525 48%, #0D0D0D 100%);
+  --background-gold: linear-gradient(120deg, #F1D59C 0%, #D6A13C 55%, #B87A24 100%);
   --color-white: #FFFFFF;
   --color-title: #373E4C;
   --color-text: #888E92;

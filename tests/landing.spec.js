@@ -92,6 +92,15 @@ test('valida campos y aceptación antes de mostrar SweetAlert2 sin peticiones', 
   await page.getByRole('checkbox', { name: 'Acepto Términos y Condiciones' }).check();
   await page.getByRole('button', { name: 'Enviar', exact: true }).click();
   await expect(page.getByRole('heading', { name: '¡Inscripción exitosa!' })).toBeVisible();
+  if (page.viewportSize().width > 1199) {
+    const layout = await page.evaluate(() => ({
+      leftEdge: document.querySelector('.landing__content').getBoundingClientRect().right,
+      rightEdge: document.querySelector('.enrollment-panel__surface').getBoundingClientRect().left,
+      bodyPadding: getComputedStyle(document.body).paddingRight,
+    }));
+    expect(layout.leftEdge).toBeCloseTo(layout.rightEdge, 0);
+    expect(layout.bodyPadding).toBe('0px');
+  }
   await page.getByRole('button', { name: 'Aceptar', exact: true }).click();
   await expect(page.locator('.swal2-popup')).toHaveCount(0);
   await openForm(page);

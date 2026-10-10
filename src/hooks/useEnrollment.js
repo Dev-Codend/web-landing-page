@@ -26,11 +26,13 @@ export default function useEnrollment(onSuccess) {
     onSuccess();
     try {
       await Swal.fire({
+        // The page hides its scrollbar, so no extra spacing is needed.
+        scrollbarPadding: false,
         icon: 'success',
         title: '¡Inscripción exitosa!',
         text: 'El formulario se completó correctamente.',
         confirmButtonText: 'Aceptar',
-        confirmButtonColor: '#EC4851',
+        confirmButtonColor: '#93652B',
         customClass: { popup: 'enrollment-alert', container: 'enrollment-alert-container' },
       });
       setValues(initialValues);

@@ -19,6 +19,7 @@
   .contact-cta {
     display: block;
     background: var(--color-accent);
+    background-image: var(--background-gold);
     position: sticky;
     bottom: 0;
     width: 100%;
@@ -28,13 +29,13 @@
 }
 
 .contact-cta__button {
-  color: var(--color-white);
+  color: var(--color-on-accent);
   font-size: 12px;
   line-height: 1.5em;
 }
 
 .contact-cta__title {
-  color: var(--color-white);
+  color: var(--color-on-accent);
   font-size: 12px;
   font-weight: bold;
 }
