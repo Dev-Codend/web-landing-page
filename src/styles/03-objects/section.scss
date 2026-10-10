@@ -1,0 +1,11 @@
+.o-section {
+  background-color: #f7f6f5;
+  height: 100vh;
+}
+
+@media screen and (max-width: 1199px) {
+  .o-section {
+    height: auto;
+    padding: 0 0 2em 0;
+  }
+}

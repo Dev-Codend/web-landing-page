@@ -1,0 +1,17 @@
+.section-header {
+  height: 80px;
+  display: flex;
+  align-items: flex-end;
+}
+
+@media screen and (max-width: 1199px) {
+  .section-header {
+    height: 73px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .section-header--desktop {
+    display: none;
+  }
+}

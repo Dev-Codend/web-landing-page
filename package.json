@@ -1,11 +1,28 @@
 {
-  "name": "legoapp",
+  "name": "first-landing",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "type": "module",
+  "description": "Landing page de diplomados virtuales con React y Vite",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "playwright test"
   },
-  "author": "",
-  "license": "ISC"
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "sweetalert2": "11.26.25"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "sass": "1.105.1",
+    "vite": "8.3.4"
+  }
 }

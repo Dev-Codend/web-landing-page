@@ -1,0 +1,238 @@
+.investment__content {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 80px);
+  justify-content: center;
+}
+
+@media screen and (max-width: 458px) {
+  .investment__content {
+    height: inherit;
+  }
+}
+
+.investment__title {
+  height: 144px;
+  font-size: 28px;
+  color: var(--color-title);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-heading);
+  line-height: 38px;
+}
+
+.investment__pricing {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.investment__installments {
+  display: flex;
+  flex-wrap: wrap;
+  width: 74%;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 512px) {
+  .investment__installments {
+    width: 100%;
+  }
+}
+
+.investment__installment {
+  width: 117.69px;
+  height: 56.24px;
+  margin-bottom: 1em;
+}
+
+.investment__installments-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.investment__border {
+  border: 2px solid #cfd0d1;
+  font-size: 12px;
+  width: 117.69px;
+  height: 56.24px;
+}
+
+.investment__border .investment__amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color-title);
+  line-height: 21px;
+}
+
+.investment__price {
+  font-weight: 600;
+  line-height: 35px;
+}
+
+.investment__price p {
+  font-size: 60px;
+  color: var(--color-accent);
+  letter-spacing: 0.5px;
+  padding: 0.5px 0.8em 11.5px 0;
+}
+
+@media screen and (max-width: 587px) {
+  .investment__price p {
+    letter-spacing: inherit;
+    font-size: 50px;
+    padding: 6.5px 0.8em 12.5px 0;
+  }
+}
+
+.investment__price label {
+  font-size: 20px;
+}
+
+.investment__before {
+  padding: 1em;
+}
+
+.investment__before p {
+  font-size: 15px;
+  line-height: 29px;
+}
+
+.investment__installment-caption {
+  display: flex;
+  justify-content: center;
+}
+
+.investment__installment-caption p {
+  height: 42px;
+  color: var(--color-text);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.investment__cash {
+  height: 80px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .investment__cash {
+    height: 70px;
+  }
+}
+
+.investment__cash p {
+  color: var(--color-text);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.investment__discount {
+  position: relative;
+}
+
+.investment__badge {
+  background-color: var(--color-title);
+  color: var(--color-white);
+  font-weight: 600;
+  text-align: center;
+  line-height: 15px;
+  -webkit-border-radius: 80px;
+  height: 67px;
+  width: 67px;
+  position: absolute;
+  top: 14px;
+  left: 99px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 587px) {
+  .investment__badge {
+    height: 63.31px;
+    width: 63.31px;
+    left: 82px;
+  }
+}
+
+.investment__badge p {
+  font-size: 19px;
+}
+
+@media screen and (max-width: 587px) {
+  .investment__badge p {
+    font-size: 17px;
+  }
+}
+
+.investment__badge label {
+  font-size: 11px;
+}
+
+.investment__detail {
+  font-size: 12px;
+  color: var(--color-text);
+}
+
+.investment__detail p {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 428px) {
+  .investment__detail p {
+    margin-bottom: 37px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .investment__detail p {
+    padding: 2em 0 0 0;
+  }
+}
+
+@media screen and (max-width: 447px) {
+  .investment__detail p {
+    padding: inherit;
+  }
+}
+
+.investment__detail--discount p {
+  justify-content: flex-start;
+  display: flex;
+}
+
+@media screen and (max-width: 586px) {
+  .investment__detail--discount p {
+    line-height: 18px;
+  }
+}
+
+.investment__legend {
+  display: flex;
+  justify-content: center;
+  width: 78%;
+  text-align: center;
+}
+
+.investment__legend p {
+  color: var(--color-text);
+  line-height: 21px;
+}
+
+.investment__notes {
+  display: flex;
+  flex-direction: column;
+  height: 176px;
+  justify-content: space-around;
+  align-items: center;
+}

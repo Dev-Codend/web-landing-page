@@ -1,1 +1,6 @@
 prepros-6.config
+node_modules/
+dist/
+playwright-report/
+test-results/
+.DS_Store

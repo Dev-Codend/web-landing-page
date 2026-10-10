@@ -1,8 +1,0 @@
-.navbar{
-    height: 80px;
-    display: flex;
-    align-items: flex-end;
-    @include rwd(1199px){
-        height: 73px;
-    }
-}

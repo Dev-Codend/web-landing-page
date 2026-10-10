@@ -1,0 +1,14 @@
+/* Los estilos permanecen junto a sus componentes; aquí se ordenan sus imports. */
+@use '../../components/Modal/Modal';
+@use '../../layouts/SectionHeader/SectionHeader';
+@use '../../components/Carousel/Carousel';
+@use '../../pages/Landing/Landing';
+@use '../../pages/Landing/Hero/Hero';
+@use '../../pages/Landing/StudyPlan/StudyPlan';
+@use '../../pages/Landing/Investment/Investment';
+@use '../../pages/Landing/Benefits/Benefits';
+@use '../../pages/Landing/Testimonials/Testimonials';
+@use '../../layouts/EnrollmentPanel/EnrollmentPanel';
+@use '../../components/FormField/FormField';
+@use '../../components/EnrollmentForm/EnrollmentForm';
+@use '../../pages/Landing/TermsModal/TermsModal';

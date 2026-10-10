@@ -1,0 +1,141 @@
+.terms-modal {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 99999;
+}
+
+.terms-modal__panel {
+  background-color: var(--color-white);
+  width: 800px;
+  height: 547px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+@media screen and (max-width: 836px) {
+  .terms-modal__panel {
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+.terms-modal__close-icon--desktop {
+  display: block;
+}
+
+@media screen and (max-width: 836px) {
+  .terms-modal__close-icon--desktop {
+    display: none;
+  }
+}
+
+.terms-modal__close-icon--mobile {
+  display: none;
+}
+
+@media screen and (max-width: 836px) {
+  .terms-modal__close-icon--mobile {
+    display: block;
+  }
+}
+
+.terms-modal__close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  top: -27px;
+  right: -26px;
+  position: absolute;
+}
+
+@media screen and (max-width: 836px) {
+  .terms-modal__close {
+    top: -65px;
+    right: 6px;
+    position: relative;
+  }
+}
+
+.terms-modal__close:hover,
+.terms-modal__close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.terms-modal__content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1em;
+}
+
+.terms-modal__text {
+  width: 100%;
+  height: 25.5em;
+  overflow: auto;
+  padding: 1em 2em 0 2em;
+}
+
+@media screen and (max-width: 836px) {
+  .terms-modal__text {
+    padding: 5em 0 0;
+    height: 96vh;
+  }
+}
+
+.terms-modal__text p {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 600;
+  height: 40px;
+}
+
+.terms-modal__subtitle {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  display: flex;
+  height: 40px;
+  align-items: flex-end;
+}
+
+.terms-modal__text span {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.terms-modal__text::-webkit-scrollbar {
+  width: 1.1%;
+  height: 100%;
+}
+
+@media screen and (max-width: 836px) {
+  .terms-modal__text::-webkit-scrollbar {
+    width: 0%;
+  }
+}
+
+.terms-modal__text::-webkit-scrollbar-button {
+  width: 0px;
+  height: 10%;
+}
+
+.terms-modal__text::-webkit-scrollbar-thumb {
+  background-color: var(--color-accent);
+  border: 0px none var(--color-white);
+  border-radius: 50px;
+}
+
+.terms-modal__close { padding: 0; }

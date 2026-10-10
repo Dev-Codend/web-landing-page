@@ -1,0 +1,53 @@
+.landing__content {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1199px) {
+  .landing__content {
+    width: 100%;
+  }
+}
+
+.contact-cta {
+  display: none;
+}
+
+@media screen and (max-width: 1199px) {
+  .contact-cta {
+    display: block;
+    background: var(--color-accent);
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    padding: 12px 0 14px 0.8em;
+    z-index: 100;
+  }
+}
+
+.contact-cta__button {
+  color: var(--color-white);
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+.contact-cta__title {
+  color: var(--color-white);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.landing--blurred {
+  filter: blur(3px);
+}
+
+.contact-cta__button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0;
+  text-align: left;
+}

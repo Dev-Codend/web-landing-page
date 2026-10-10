@@ -1,0 +1,74 @@
+.form-field__label {
+  position: relative;
+  display: block;
+}
+
+.form-field__input {
+  box-sizing: border-box;
+  display: block;
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 440px;
+  color: var(--color-title);
+  font-weight: bold;
+  padding: 0px 15px;
+  margin: 8px 0px;
+  transition: all 0.2s ease-in-out;
+  font-size: 14px;
+  font-family: var(--font-body);
+}
+
+@media screen and (max-width: 480px) {
+  .form-field__input {
+    width: 98.3%;
+  }
+}
+
+.form-field__input::placeholder {
+  transition: all 0.2s ease-in-out;
+  font-weight: lighter;
+  opacity: 0.5;
+}
+
+.form-field__input:focus {
+  padding-top: 28px;
+  padding-bottom: 12px;
+}
+
+.form-field__input:focus::placeholder {
+  color: transparent;
+}
+
+.form-field__input:focus + span {
+  opacity: 1;
+  top: 10px;
+}
+
+.form-field__label span {
+  color: var(--color-title);
+  font-size: 9px;
+  font-family: var(--font-body);
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-field__label .form-field__error {
+  color: #CB202A;
+}
+
+.enrollment-form--attempted .form-field__input:invalid {
+  box-shadow: inset 0 -2px #CB202A;
+}
+
+.enrollment-form--attempted .form-field__input:invalid ~ .form-field__error {
+  opacity: 1;
+  top: 2px;
+}
+
+.enrollment-form--attempted .form-field__input:invalid + .form-field__caption {
+  opacity: 0;
+}

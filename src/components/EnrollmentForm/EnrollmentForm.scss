@@ -1,0 +1,230 @@
+.enrollment-form {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.enrollment-form .enrollment-form__terms {
+  display: flex;
+  flex-direction: row;
+  width: 53%;
+  height: 50px;
+  align-items: center;
+  font-size: 12px;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1199px) {
+  .enrollment-form .enrollment-form__terms {
+    width: 100%;
+    justify-content: end;
+  }
+}
+
+.enrollment-form .enrollment-form__terms-link {
+  color: var(--color-white);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.enrollment-form .enrollment-form__actions {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  align-items: center;
+}
+
+.enrollment-form .enrollment-form__actions .enrollment-form__submit {
+  height: 50px;
+  width: 190px;
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.enrollment-form [type="checkbox"]:checked,
+.enrollment-form [type="checkbox"]:not(:checked) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  z-index: 1;
+}
+
+.enrollment-form [type="checkbox"]:checked + label,
+.enrollment-form [type="checkbox"]:not(:checked) + label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  color: var(--color-white);
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  height: 0.5em;
+}
+
+.enrollment-form [type="checkbox"]:checked + label:before,
+.enrollment-form [type="checkbox"]:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--color-accent);
+  background: var(--color-dark);
+  border-radius: 2px;
+}
+
+.enrollment-form [type="checkbox"]:checked + label:after,
+.enrollment-form [type="checkbox"]:not(:checked) + label:after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: var(--color-accent);
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.enrollment-form [type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+
+.enrollment-form [type="checkbox"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.enrollment-form [type="checkbox"]:disabled:checked + label:before,
+.enrollment-form [type="checkbox"]:disabled:not(:checked) + label:before {
+  border-color: #ccc;
+  background-color: #eee;
+}
+
+.enrollment-form [type="checkbox"]:disabled:checked + label:after {
+  background: #aaa;
+}
+
+.enrollment-form__terms[data-tooltip] {
+  position: relative;
+  cursor: pointer;
+}
+
+.enrollment-form__terms[data-tooltip]:before,
+.enrollment-form__terms[data-tooltip]:after {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+  transform: translate3d(0, 0, 0);
+  pointer-events: none;
+}
+
+.enrollment-form__terms[data-tooltip]:hover:before,
+.enrollment-form__terms[data-tooltip]:hover:after,
+.enrollment-form__terms[data-tooltip]:focus:before,
+.enrollment-form__terms[data-tooltip]:focus:after {
+  visibility: visible;
+  opacity: 1;
+}
+
+.enrollment-form__terms[data-tooltip]:before {
+  z-index: 1001;
+  border: 6px solid transparent;
+  background: transparent;
+  content: "";
+}
+
+.enrollment-form__terms[data-tooltip]:after {
+  z-index: 1000;
+  padding: 8px;
+  width: 475px;
+  background-color: #CB202A;
+  color: #fff;
+  content: attr(data-tooltip);
+  font-size: 10px;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 468px) {
+  .enrollment-form__terms[data-tooltip]:after {
+    width: 105%;
+  }
+}
+
+.enrollment-form__terms[data-tooltip]:before,
+.enrollment-form__terms[data-tooltip]:after {
+  bottom: 100%;
+  left: 5%;
+}
+
+@media screen and (max-width: 468px) {
+  .enrollment-form__terms[data-tooltip]:before,
+  .enrollment-form__terms[data-tooltip]:after {
+    left: 10%;
+  }
+}
+
+.enrollment-form__terms[data-tooltip]:before {
+  margin-left: -15px;
+  margin-bottom: -12px;
+  border-top-color: #CB202A;
+}
+
+@media screen and (max-width: 486px) {
+  .enrollment-form__terms[data-tooltip]:before {
+    margin-left: -23px;
+  }
+}
+
+.enrollment-form__terms[data-tooltip]:after {
+  margin-left: -40px;
+  height: 51px;
+}
+
+.enrollment-form__terms-text { height: 0; }
+.enrollment-form__terms-link { padding: 0; font-size: inherit; }
+.enrollment-form__checkbox {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.enrollment-form [type="checkbox"]:focus-visible + label::before {
+  outline: 2px solid var(--color-white);
+  outline-offset: 3px;
+}
+
+.enrollment-form__terms:has(input:checked)::before,
+.enrollment-form__terms:has(input:checked)::after {
+  display: none;
+}
+
+.enrollment-alert { font-family: var(--font-body); }
+
+.enrollment-alert-container {
+  /* SweetAlert2 ships unlayered CSS; this must sit above the fixed form. */
+  z-index: 100000 !important;
+}

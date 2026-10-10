@@ -1,0 +1,159 @@
+.hero {
+  background-image: url("../../../assets/backgroundVideo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+@media screen and (max-width: 585px) {
+  .hero {
+    position: relative;
+    height: calc(100vh - 93px);
+  }
+}
+
+.hero__intro {
+  max-width: 583px;
+  height: 224px;
+  position: absolute;
+  bottom: 0;
+  padding: 40px;
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  width: 43%;
+}
+
+@media screen and (max-width: 1199px) {
+  .hero__intro {
+    width: inherit;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero__intro {
+    height: 342px;
+    left: 9.5px;
+    width: calc(100% - 3rem * 0.4);
+    max-width: 585px;
+    padding: 30px 18px 0 18px;
+    bottom: -12em;
+  }
+}
+
+.hero__category {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@media screen and (max-width: 1347px) {
+  .hero__category {
+    padding: 0 0 1em;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .hero__category {
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 622px) {
+  .hero__category {
+    padding: 0 0 1em;
+  }
+}
+
+@media screen and (max-width: 586px) {
+  .hero__category {
+    padding: 0px;
+  }
+}
+
+.hero__title {
+  font-size: 28px;
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  line-height: 32px;
+  letter-spacing: 0.25px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 585px) {
+  .hero__title {
+    height: 5em;
+    font-weight: 400;
+    line-height: 35px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .hero__title {
+    padding: 0px;
+  }
+}
+
+.hero__description {
+  font-size: 12px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  line-height: 18px;
+}
+
+@media screen and (max-width: 1347px) {
+  .hero__description {
+    padding: 1em 0 0 0;
+  }
+}
+
+@media screen and (max-width: 622px) {
+  .hero__description {
+    padding: 1em 0 0;
+  }
+}
+
+@media screen and (max-width: 586px) {
+  .hero__description {
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .hero__description {
+    height: auto;
+  }
+}
+
+.hero__start {
+  position: absolute;
+  bottom: 14em;
+  z-index: 12;
+  background: var(--color-accent);
+  width: 266px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .hero__start {
+    bottom: 9.4em;
+    left: 9.5px;
+    width: 206px;
+  }
+}
+
+.hero__start p {
+  color: var(--color-white);
+  font-size: 12px;
+  line-height: 25px;
+  font-weight: 600;
+}
+
+.hero__description {
+  height: 43%;
+}

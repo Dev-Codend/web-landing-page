@@ -1,0 +1,119 @@
+.enrollment-panel__surface {
+  width: 50%;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: var(--color-dark);
+}
+
+@media screen and (max-width: 1199px) {
+  .enrollment-panel__surface {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.enrollment-panel {
+  display: block;
+  position: fixed;
+  z-index: 4000;
+}
+
+@media screen and (max-width: 1199px) {
+  .enrollment-panel {
+    display: block;
+  }
+}
+
+.enrollment-panel__close {
+  background: #ff000000;
+  border: 1px solid #ff000000;
+  font-size: 30px;
+  color: var(--color-white);
+  display: none;
+}
+
+@media screen and (max-width: 1199px) {
+  .enrollment-panel__close {
+    display: block;
+  }
+}
+
+.enrollment-panel__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.enrollment-panel__content {
+  margin-right: auto;
+  margin-left: auto;
+  width: calc(100% - 4rem * 4);
+  max-width: 440px;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@media screen and (max-width: 1366px) {
+  .enrollment-panel__content {
+    width: calc(100% - 3.78rem * 4);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .enrollment-panel__content {
+    display: inherit;
+    width: 100%;
+    overflow: auto;
+    padding: 1em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .enrollment-panel__content {
+    max-width: inherit;
+  }
+}
+
+.enrollment-panel__content .enrollment-panel__intro {
+  height: auto;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 1199px) {
+  .enrollment-panel__content .enrollment-panel__intro {
+    height: 7.8em;
+    margin-bottom: 23px;
+  }
+}
+
+.enrollment-panel__content .enrollment-panel__intro h2 {
+  font-size: 28px;
+  line-height: 58px;
+}
+
+@media screen and (max-width: 1199px) {
+  .enrollment-panel__content .enrollment-panel__intro h2 {
+    font-size: 20px;
+    line-height: 24px;
+    height: 2.4em;
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.enrollment-panel__content .enrollment-panel__intro p {
+  line-height: 18px;
+  font-size: 12px;
+}
+
+.enrollment-panel__form { width: 100%; }
+.enrollment-panel__close { padding: 1px 2px; }
