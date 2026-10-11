@@ -7,8 +7,8 @@ function ModuleCard({ module }) {
     <div className="study-plan__slide">
       <div className="study-plan__card">
         <div className="study-plan__module">
-          <span>MÓDULO {module.id}</span>
-          <h2>Análisis <br />Organizacional</h2>
+          <span>SERVICIO {module.id}</span>
+          <h2>{module.title} <br />{module.subtitle}</h2>
           <ul>{module.topics.map((topic) => <li key={topic}>· {topic}</li>)}</ul>
         </div>
       </div>
@@ -21,11 +21,11 @@ export default function StudyPlan() {
     <section className="o-section study-plan" aria-labelledby="study-plan-title">
       <div className="o-container"><SectionHeader /></div>
       <div className="study-plan__content">
-        <div className="study-plan__heading"><h2 className="study-plan__title" id="study-plan-title">Plan de estudios</h2></div>
+        <div className="study-plan__heading"><h2 className="study-plan__title" id="study-plan-title">Soluciones web</h2></div>
         <div className="study-plan__slider">
           <div className="study-plan__edge study-plan__edge--left" aria-hidden="true" />
           <div className="study-plan__edge study-plan__edge--right" aria-hidden="true" />
-          <Carousel className="study-plan__carousel" items={modules} label="Módulos del plan de estudios" renderItem={(module) => <ModuleCard module={module} />} />
+          <Carousel className="study-plan__carousel" items={modules} label="Servicios de diseño web" renderItem={(module) => <ModuleCard module={module} />} />
         </div>
       </div>
     </section>

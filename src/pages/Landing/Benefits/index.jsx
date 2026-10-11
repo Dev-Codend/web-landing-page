@@ -7,7 +7,7 @@ export default function Benefits() {
       <div className="o-container">
         <SectionHeader />
         <div className="benefits__content">
-          <div className="benefits__heading"><h2 id="benefits-title">¿Por qué nuestros <br />diplomados virtuales?</h2></div>
+          <div className="benefits__heading"><h2 id="benefits-title">¿Por qué crear tu <br />web con nosotros?</h2></div>
           <div className="benefits__items">
             {benefits.map(({ title, description, icon }) => (
               <div className="benefits__item" key={title}>

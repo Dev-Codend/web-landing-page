@@ -4,12 +4,12 @@ import { testimonials } from '../content';
 
 export default function Testimonials() {
   return (
-    <section className="testimonials" aria-label="Testimonios de estudiantes">
+    <section className="testimonials" aria-label="Ideas para tu proyecto web">
       <div className="o-container"><SectionHeader light /></div>
       <Carousel
         items={testimonials}
         variant="testimonials"
-        label="Testimonios"
+        label="Proyectos web"
         renderItem={(testimonial) => (
           <div className="testimonials__slide">
             <div className="o-container">

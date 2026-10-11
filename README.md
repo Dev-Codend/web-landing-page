@@ -1,6 +1,6 @@
 # First Landing
 
-Landing de un Diplomado en Marketing Virtual migrada a React y Vite con JavaScript. Conserva el contenido, los recursos y las medidas del diseño original.
+Landing para un servicio de creación de páginas web y landing pages, desarrollada con React y Vite. Conserva la estructura del diseño original y los textos del formulario.
 
 ## Ejecutar
 
@@ -65,7 +65,7 @@ Los componentes usan BEM (`study-plan__card`, `carousel__arrow--next`); los obje
 - El formulario valida campos y aceptación de términos. Al enviar muestra SweetAlert2 y limpia los campos al confirmar.
 - El envío es una simulación local: no consulta una API, no envía información y no la persiste.
 
-El contenido compartido está en `src/pages/Landing/content.js`. Los títulos, las fechas y los precios están en sus secciones respectivas. El texto de términos sigue siendo el texto de ejemplo original.
+El contenido compartido está en `src/pages/Landing/content.js`. Los títulos y la propuesta de cotización a medida están en sus secciones respectivas. Los fondos generados con IA están en `src/assets/web/`; sus prompts y dimensiones se documentan en `design/image-prompts.md`. El texto de términos sigue siendo el texto de ejemplo original.
 
 ## Verificación
 

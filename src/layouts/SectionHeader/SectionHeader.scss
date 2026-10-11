@@ -4,6 +4,32 @@
   align-items: flex-end;
 }
 
+.section-header__logo {
+  width: 191px;
+  height: 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--color-title);
+}
+
+.section-header__logo--light {
+  color: var(--color-white);
+}
+
+.section-header__brand {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.section-header__tagline {
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: var(--color-accent);
+}
+
 @media screen and (max-width: 1199px) {
   .section-header {
     height: 73px;

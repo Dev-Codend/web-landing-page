@@ -5,34 +5,51 @@ import networking from '../../assets/razones/networking.png';
 import flexibility from '../../assets/razones/flexibilidad.png';
 import certification from '../../assets/razones/certificacion.png';
 
-const topics = [
-  'Políticas de Gestión de Recursos Humanos',
-  'Reclutamiento y Selección de Personal',
-  'Gestión de Capacitación y Evaluación de Desempeño',
-  'Contratación, Inducción al Personal, Valuación del Puesto y Gestión de Compensación',
-  'Desarrollo, Retención, Sanción disciplinaria y Despido laboral',
+export const modules = [
+  {
+    id: 1, title: 'Páginas web', subtitle: 'para tu negocio',
+    topics: [
+      'Diseño alineado con la identidad de tu marca',
+      'Secciones claras para presentar tus servicios',
+      'Experiencia adaptable a celular, tablet y escritorio',
+      'Navegación sencilla y contenido bien organizado',
+      'Base técnica para que tu proyecto pueda crecer',
+    ],
+  },
+  {
+    id: 2, title: 'Landing pages', subtitle: 'con un objetivo',
+    topics: [
+      'Una propuesta de valor clara desde el inicio',
+      'Contenido enfocado en tu producto o servicio',
+      'Llamadas a la acción visibles y bien ubicadas',
+      'Formularios para facilitar el primer contacto',
+      'Diseño pensado para acompañar tus campañas',
+    ],
+  },
 ];
-
-export const modules = [{ id: 1, topics }, { id: 2, topics }];
 
 export const benefits = [
-  { title: 'Prestigio', description: '50 años superando tus expectativas', icon: prestige },
-  { title: 'Calidad Educativa', description: 'Docentes y tutores altamente capacitados', icon: quality },
-  { title: 'Metodología', description: 'Participativa y vivencial.', icon: methodology },
-  { title: 'Networking', description: 'Amplía tu red de contactos', icon: networking },
-  { title: 'Flexibilidad', description: 'Clases disponibles las 24 horas del día todos los días', icon: flexibility },
-  { title: 'Certificación', description: 'Física y Digital', icon: certification },
+  { title: 'Tu identidad', description: 'Un diseño que representa la esencia de tu negocio.', icon: prestige },
+  { title: 'Diseño cuidado', description: 'Detalles visuales que transmiten confianza.', icon: quality },
+  { title: 'Proceso claro', description: 'Definimos contigo el objetivo y el alcance.', icon: methodology },
+  { title: 'Más conexiones', description: 'Facilita que tus visitantes se pongan en contacto.', icon: networking },
+  { title: 'Adaptable', description: 'Una experiencia cómoda desde cualquier pantalla.', icon: flexibility },
+  { title: 'Lista para lanzar', description: 'Acompañamiento para llevar tu proyecto a la web.', icon: certification },
 ];
 
-const testimonial = {
-  quote: '“It’s the untold story of the images that shaped Canada’s identity and it’s not just for design anywhere nerds.”',
-  name: 'Juan Carlos Orellana',
-  course: 'Estudiante del curso Contabilidad Para No Contadores',
-};
-
 export const testimonials = [
-  { id: 1, ...testimonial },
-  { id: 2, ...testimonial },
+  {
+    id: 1,
+    quote: 'Una web que presenta tu negocio con claridad y convierte tu presencia digital en una primera impresión memorable.',
+    name: 'Páginas web corporativas',
+    course: 'Para profesionales, marcas y empresas',
+  },
+  {
+    id: 2,
+    quote: 'Una página, un mensaje y una acción: conecta tu campaña con las personas que buscan lo que ofreces.',
+    name: 'Landing pages para campañas',
+    course: 'Para presentar servicios, productos y lanzamientos',
+  },
 ];
 
 // Texto original de la landing; debe sustituirse por los términos definitivos.

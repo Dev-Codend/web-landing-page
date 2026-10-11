@@ -22,8 +22,8 @@ test('carga las secciones y los recursos sin errores', async ({ page }, testInfo
     if (response.url().startsWith('http://127.0.0.1:4173') && response.status() >= 400) failedAssets.push(response.url());
   });
   await page.goto('/');
-  await expect(page.getByRole('heading', { level: 1 })).toHaveText('DIPLOMADO EN MARKETING VIRTUAL');
-  await expect(page.getByRole('heading', { name: 'Plan de estudios' })).toBeVisible();
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('PÁGINAS WEB Y LANDING PAGES');
+  await expect(page.getByRole('heading', { name: 'Soluciones web' })).toBeVisible();
   await expect(page.locator('.benefits__item')).toHaveCount(6);
   await expect(page.locator('.investment__installment')).toHaveCount(6);
   await expect(page.locator('.enrollment-panel__surface')).toBeVisible({ visible: page.viewportSize().width > 1199 });
@@ -35,7 +35,7 @@ test('carga las secciones y los recursos sin errores', async ({ page }, testInfo
 
 test('los carruseles avanzan, retroceden y vuelven al comienzo', async ({ page }) => {
   await page.goto('/');
-  for (const label of ['Módulos del plan de estudios', 'Testimonios']) {
+  for (const label of ['Servicios de diseño web', 'Proyectos web']) {
     const carousel = page.getByRole('region', { name: label, exact: true });
     const position = carousel.locator('[aria-live]');
     await expect(position).toHaveText('1 de 2');

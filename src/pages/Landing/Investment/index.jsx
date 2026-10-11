@@ -1,27 +1,35 @@
 import SectionHeader from '../../../layouts/SectionHeader';
 
+const projectStages = [
+  { label: 'Estrategia', amount: 150 },
+  { label: 'Diseño web', amount: 450 },
+  { label: 'Contenido', amount: 200 },
+  { label: 'Desarrollo', amount: 700 },
+  { label: 'Pruebas', amount: 150 },
+  { label: 'Publicación', amount: 150 },
+];
+
 export default function Investment() {
   return (
     <section className="o-section investment" aria-labelledby="investment-title">
       <div className="o-container">
         <SectionHeader />
         <div className="investment__content">
-          <h2 className="investment__title" id="investment-title">Inversión</h2>
+          <h2 className="investment__title" id="investment-title">Tu proyecto, a tu medida</h2>
           <div className="investment__pricing">
-            <div className="investment__discount"><div className="investment__badge"><p>25%</p><label>Dscto.</label></div></div>
-            <div className="investment__before"><p>Antes: S/ 2,994.00</p></div>
-            <div className="investment__price"><p>S/ 2,245<label>.00</label></p></div>
+            <div className="investment__before"><p>Tu presencia digital empieza aquí</p></div>
+            <div className="investment__price"><p>S/ 1,800<label>.00</label></p></div>
           </div>
-          <div className="investment__cash"><p>Pagando al contado</p></div>
-          <div className="investment__installment-caption"><p>O pagando en cuotas</p></div>
+          <div className="investment__cash"><p>Diseño, desarrollo y lanzamiento</p></div>
+          <div className="investment__installment-caption"><p>Así se distribuye tu inversión</p></div>
           <div className="investment__installments-wrapper">
             <div className="investment__installments">
-              {Array.from({ length: 6 }, (_, index) => (
-                <div className="investment__installment" key={index}>
+              {projectStages.map(({ label, amount }) => (
+                <div className="investment__installment" key={label}>
                   <div>
                     <fieldset className="investment__border">
-                      <legend className="investment__legend"><p>{index === 0 ? 'Matrícula' : `Cuota ${index}`}</p></legend>
-                      <p className="investment__amount">S/. 499{index === 0 ? '*' : ''}</p>
+                      <legend className="investment__legend"><p>{label}</p></legend>
+                      <p className="investment__amount">S/ {amount}</p>
                     </fieldset>
                   </div>
                 </div>
@@ -29,8 +37,8 @@ export default function Investment() {
             </div>
           </div>
           <div className="investment__notes">
-            <div className="investment__detail"><p>Precio total pagando en cuotas: S/ 2,994</p></div>
-            <div className="investment__detail investment__detail--discount"><p>*Obtén el 30% de descuento en la matrícula pagando hasta el 27 de febrero</p></div>
+            <div className="investment__detail"><p>Una web adaptable, con identidad propia y lista para publicar.</p></div>
+            <div className="investment__detail investment__detail--discount"><p>Montos referenciales: ajustamos la propuesta al alcance de tu proyecto.</p></div>
           </div>
         </div>
       </div>
