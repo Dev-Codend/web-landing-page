@@ -21,7 +21,6 @@ export default function useCarousel(count) {
 
   useEffect(() => {
     if (!animating) return;
-    // Also completes when a browser suppresses transitionend (e.g. a hidden tab).
     const timer = window.setTimeout(finish, 350);
     return () => window.clearTimeout(timer);
   }, [animating, count]);

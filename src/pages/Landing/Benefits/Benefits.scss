@@ -80,6 +80,16 @@
   align-items: center;
 }
 
+.benefits__glyph {
+  display: inline-flex;
+  background-color: var(--color-accent);
+  mask: var(--benefit-icon) center / contain no-repeat;
+  img {
+    display: block;
+    visibility: hidden;
+  }
+}
+
 .benefits__content .benefits__text {
   width: 198px;
   display: flex;
